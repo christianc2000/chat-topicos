@@ -10,7 +10,7 @@ const Detalle = require('../models/Detalle');
 
 const test = (req, res) => {
     console.log(typeof new Date().toLocaleDateString());
-     const detalle1 = new Detalle( { 
+    /* const detalle1 = new Detalle( { 
          producto: '633a0d6dd934689155015684', 
          promocion: '633a0e14615c46b62b2b4b97'
      } );
@@ -19,7 +19,7 @@ const test = (req, res) => {
          promocion: '633a0e14615c46b62b2b4b96'
      } );
      detalle1.save()
-     detalle2.save()
+     detalle2.save()*/
     // promocion.save();
     /*const promocion1 = new Promocion({
         nombre: 'Paquete 1',
