@@ -12,7 +12,9 @@ const axios = require('axios');
 const controllerDialogFlow = async( resultado, senderId ) => {
     let peticion = {};
     let respuesta;
-    ApiFacebook( senderId );
+    console.log('resultado DialogFlow: '+resultado);
+    console.log('senderId DialogFlow: '+senderId);
+    /*ApiFacebook( senderId );
     switch (resultado.intent.displayName) {
         case 'Promocion': 
             respuesta = await Promociones( resultado.fulfillmentText );
@@ -57,7 +59,7 @@ const controllerDialogFlow = async( resultado, senderId ) => {
         default:
             peticion = await envio( resultado.fulfillmentText, senderId );
             break;
-    }
+    }*/
     return peticion;
 }
 const valor = async( resultado, facebookId ) => {
