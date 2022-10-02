@@ -3,7 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const webRoutes = require('./routes/web.routes');
 const cors = require('cors');
-//const dbConexion = require('./database/db');
+const dbConexion = require('./database/db');
 const app = express();
 
 let port = process.env.PORT || 8080;
@@ -12,7 +12,7 @@ app.use( cors() );
 app.use( bodyParser.urlencoded({ extended: true }) );
 
 
-//dbConexion();
+dbConexion();
 // ===__********** Carpeta pública  **********__===
 app.use( express.static('public') );
 
