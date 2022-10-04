@@ -4,7 +4,7 @@ const { test, getWebHook, postWebHook } = require('../controllers/chat.controlle
 const router = Router();
 
 // ===__********** Rutas  **********__===
-router.get('/', test );
+//router.get('/', test );
 router.get('/webhook', getWebHook );
 router.post('/webhook', postWebHook );
 
